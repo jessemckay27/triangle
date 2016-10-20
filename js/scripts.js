@@ -3,7 +3,7 @@
 var triangleType = function(side1, side2, side3){
   var text;
   //not a triangle check
-  if(side1 + side2 <= side3){
+  if(side1 + side2 <= side3 || side3 + side1 <= side2 || side2 + side3 <= side1){
       text = "This is not a triangle";
       return text;
   }
